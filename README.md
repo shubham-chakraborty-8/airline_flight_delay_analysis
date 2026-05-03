@@ -1,6 +1,6 @@
 # Airline Flight Delay Analysis
 
-## Problem Statement
+## Introduction
 Airline delays are a critical operational and customer experience challenge, but they are often analyzed in isolation - focusing either on delay frequency or duration without a unified view.
 
 This fragmented approach makes it difficult to identify true performance bottlenecks, assess operational efficiency, and understand risk patterns across airlines.
@@ -25,7 +25,9 @@ The full EDA can be found the notebook [here](https://github.com/shubham-chakrab
 
 <img width="1422" height="707" alt="flights over-time" src="https://github.com/user-attachments/assets/aaef7313-7b49-4c07-b279-748cebe053aa" />
 
+### Flight Disruption Mix
 <img width="1393" height="672" alt="flight_disruption_mix_trend" src="https://github.com/user-attachments/assets/a3d8fb35-b82c-4afa-8e5c-21b321e7f4ec" />
+The figure above shows the disruption matrix of all flights for the years. Delays dominate, cancellations spike around pandemic and diversions are rare.
 
 <img width="1084" height="687" alt="delay_cause_matrix" src="https://github.com/user-attachments/assets/0542b2e1-e5d2-42c4-bd03-0f3af5765dae" />
 
@@ -58,3 +60,5 @@ The full EDA can be found the notebook [here](https://github.com/shubham-chakrab
 | US Airways Inc.              | 784157      | 134516    | 12167         | 7678                 | 1.06        | 81.29 | 2.53    | 0.24             | 0.11                 |
 | Hawaiian Airlines Inc.       | 727265      | 89794     | 4850          | 7394                 | 0.57        | 86.99 | 1.68    | 0.23             | 0.11                 |
 | Delta Air Lines Inc.         | 8661561     | 1198884   | 85395         | 531592               | 1.11        | 85.17 | 7.12    | 0.20             | 0.08                 |
+
+
