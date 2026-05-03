@@ -71,5 +71,6 @@ The summary is sorted along the disruption score. Since I could not find any rel
 Two airline changed their branding while keeping the same IATA code. A simple pivot chart shows the change below.
 
 <img width="1576" height="580" alt="envoy_express" src="https://github.com/user-attachments/assets/f4d10cec-78b8-48b4-b7e1-371a399cf13d" />
-Clearly Expressjet had to scale down their operations over the years and the pandemic may have been the final nail in their downfall as their last flight was on the third quarter of 2020. 
+ExpressJet Airlines Inc. became Expressjet Airlines LLC on April 2019. American Eagle Airlines Inc. rebranded to Envoy Air on April 2019.
+Clearly Expressjet had to scale down their operations over the years and the pandemic may have been the final chapter in their downfall as their last flight was on the third quarter of 2020. 
 American Eagle rebranded to Envoy Air and got slightly better while keeping their flights relatively stable but slowly decreased operations after the pandemic.
