@@ -26,16 +26,16 @@ The full EDA can be found the notebook [here](https://github.com/shubham-chakrab
 ### Flight Disruption Mix
 <img width="1393" height="672" alt="flight_disruption_mix_trend" src="https://github.com/user-attachments/assets/a3d8fb35-b82c-4afa-8e5c-21b321e7f4ec" />
 The figure above shows the disruption matrix of all flights for the years. Delays dominate, cancellations spike around pandemic and diversions are rare.
-
+----
 
 ### Delay Cause Matrix
 <img width="1084" height="687" alt="delay_cause_matrix" src="https://github.com/user-attachments/assets/0542b2e1-e5d2-42c4-bd03-0f3af5765dae" />
 The figure above shows the causes and the severity - frequency matrix. Carrier delays are by far the biggest cause of disruption. Weather delays are infrequent but intense.
-
+----
 
 <img width="1080" height="693" alt="Airline_performance_matrix" src="https://github.com/user-attachments/assets/6ca7e6e6-8ff7-4332-b9ea-e204cf9f62b2" />
 The standard deviation in delay rate of airlines is plotted against the average delay rate thus showing us a volatility matrix of each airline. Alaska, Horizon and Airtrain are clearly doing something right being both low delay and less volatile. Hawaiian airlines has low delay rate but unrealiable due to volatility. Jetblue, Expressjet are clearly the worst performing due to being heavily delayed and also being unreliable.
-
+----
 
 
 | carrier name                 | arr_flights | arr_del15 | arr_cancelled | severe delay flights | cancel rate | OTP % | ImPax % | disruption score | disruption score std |
