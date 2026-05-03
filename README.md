@@ -20,24 +20,24 @@ Python, Excel, Power BI
 3. Impax%
 4. Disruption Score
 
-## Exploratory data analysis
+# Exploratory data analysis
 The full EDA can be found the notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/flight_delay_project.ipynb).
 
-### Flight Disruption Mix
+## Flight Disruption Mix
 <img width="1393" height="672" alt="flight_disruption_mix_trend" src="https://github.com/user-attachments/assets/a3d8fb35-b82c-4afa-8e5c-21b321e7f4ec" />
 The figure above shows the disruption matrix of all flights for the years. Delays dominate, cancellations spike around pandemic and diversions are rare.
-----
 
-### Delay Cause Matrix
+
+## Delay Cause Matrix
 <img width="1084" height="687" alt="delay_cause_matrix" src="https://github.com/user-attachments/assets/0542b2e1-e5d2-42c4-bd03-0f3af5765dae" />
 The figure above shows the causes and the severity - frequency matrix. Carrier delays are by far the biggest cause of disruption. Weather delays are infrequent but intense.
-----
 
+## Airline Performance mstrix
 <img width="1080" height="693" alt="Airline_performance_matrix" src="https://github.com/user-attachments/assets/6ca7e6e6-8ff7-4332-b9ea-e204cf9f62b2" />
 The standard deviation in delay rate of airlines is plotted against the average delay rate thus showing us a volatility matrix of each airline. Alaska, Horizon and Airtrain are clearly doing something right being both low delay and less volatile. Hawaiian airlines has low delay rate but unrealiable due to volatility. Jetblue, Expressjet are clearly the worst performing due to being heavily delayed and also being unreliable.
-----
 
 
+## Airline Summary
 | carrier name                 | arr_flights | arr_del15 | arr_cancelled | severe delay flights | cancel rate | OTP % | ImPax % | disruption score | disruption score std |
 |------------------------------|-------------|-----------|---------------|----------------------|-------------|-------|---------|------------------|----------------------|
 | ExpressJet Airlines LLC      | 149234      | 29672     | 8198          | 24162                | 6.70        | 74.62 | 21.68   | 0.53             | 0.13                 |
@@ -63,5 +63,4 @@ The standard deviation in delay rate of airlines is plotted against the average 
 | US Airways Inc.              | 784157      | 134516    | 12167         | 7678                 | 1.06        | 81.29 | 2.53    | 0.24             | 0.11                 |
 | Hawaiian Airlines Inc.       | 727265      | 89794     | 4850          | 7394                 | 0.57        | 86.99 | 1.68    | 0.23             | 0.11                 |
 | Delta Air Lines Inc.         | 8661561     | 1198884   | 85395         | 531592               | 1.11        | 85.17 | 7.12    | 0.20             | 0.08                 |
-
-
+The summary is sorted along the disruption score. Since I could not find any reliable universal performance scoring metric for the airline industry, I provided weighted scoring to the disruption events such as delays, cancellations and diversions. Cancellations got the highest score of 5, diversions got 3 and delays being most common and least disruptive among the three got a baseline scoring. The combination created a table that confirms the performance matrix to a high degree. Delta Air lines being the clear most reliable alternative despite being one of the larger airlines highlights their efficiency. Both the top most disruptive airlines had to rebrand themselves later on due to being highly inefficient.
