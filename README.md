@@ -65,3 +65,9 @@ The standard deviation in delay rate of airlines is plotted against the average 
 | Delta Air Lines Inc.         | 8661561     | 1198884   | 85395         | 531592               | 1.11        | 85.17 | 7.12    | 0.20             | 0.08                 |
 
 The summary is sorted along the disruption score. Since I could not find any reliable universal performance scoring metric for the airline industry, I provided weighted scoring to the disruption events such as delays, cancellations and diversions. Cancellations got the highest score of 5, diversions got 3 and delays being most common and least disruptive among the three got a baseline scoring. The combination created a table that confirms the performance matrix to a high degree. Delta Air lines being the clear most reliable alternative despite being one of the larger airlines highlights their efficiency. Both the top most disruptive airlines had to rebrand themselves later on due to being highly inefficient.
+
+
+## Airline Rebranding
+Two airline changed their branding while keeping the same IATA code. A simple pivot table and pivot chart shows the change below.
+<img width="495" height="478" alt="year envoy_express" src="https://github.com/user-attachments/assets/225abe29-0b92-4f7c-abc1-5109a3acde20" />
+<img width="1576" height="580" alt="envoy_express" src="https://github.com/user-attachments/assets/f4d10cec-78b8-48b4-b7e1-371a399cf13d" />
