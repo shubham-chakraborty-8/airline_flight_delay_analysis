@@ -20,3 +20,5 @@ https://www.kaggle.com/datasets/sriharshaeedala/airline-delay
 3. Impax%
 4. Disruption Score
 
+## Exploratory data analysis
+The full EDA can be found the notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/flight_delay_project.ipynb).
