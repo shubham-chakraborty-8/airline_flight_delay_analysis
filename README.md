@@ -76,3 +76,7 @@ Clearly Expressjet had to scale down their operations over the years and the pan
 American Eagle rebranded to Envoy Air and got slightly better while keeping their flights relatively stable but slowly decreased operations after the pandemic.
 
 
+## Dashboard
+
+Please find the fully interactive PowerBi desktop file [here](https://drive.google.com/file/d/1dQekthyGDRKm_d_2tA6Bhzfp5E-LkUeK/view?usp=drive_link).
+Alternatively you can also view the static pdf [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/flight_delay.pdf).
