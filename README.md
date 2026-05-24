@@ -95,7 +95,7 @@ These engineered variables help normalize performance, identify root causes, and
 
 ---
 
-### 📈 Rates *(Efficiency Metrics)*
+### Rates *(Efficiency Metrics)*
 
 These features normalize disruptions relative to flight volume and measure operational efficiency.
 
@@ -189,7 +189,7 @@ The figure above shows the disruption matrix of all flights for the years. Delay
 <img width="1084" height="687" alt="delay_cause_matrix" src="https://github.com/user-attachments/assets/0542b2e1-e5d2-42c4-bd03-0f3af5765dae" />
 The figure above shows the causes and the severity - frequency matrix. Carrier delays are by far the biggest cause of disruption. Weather delays are infrequent but intense.
 
-## Airline Performance mstrix
+## Airline Performance matrix
 <img width="1080" height="693" alt="Airline_performance_matrix" src="https://github.com/user-attachments/assets/6ca7e6e6-8ff7-4332-b9ea-e204cf9f62b2" />
 The standard deviation in delay rate of airlines is plotted against the average delay rate thus showing us a volatility matrix of each airline. Alaska, Horizon, Airtrain and Delta are clearly doing something right being both low delay and less volatile. Hawaiian airlines has low delay rate but unrealiable due to volatility. Jetblue, Expressjet are clearly the worst performing due to being heavily delayed and also being unreliable.
 
