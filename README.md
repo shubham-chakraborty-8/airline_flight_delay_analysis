@@ -54,7 +54,7 @@ Contains identifiers and descriptive information for airlines and airports.
 
 ---
 
-### 📊 Operational Metrics *(Counts / Frequency)*
+### Operational Metrics *(Counts / Frequency)*
 
 These variables represent **how often disruptions occur** in airline operations.
 
