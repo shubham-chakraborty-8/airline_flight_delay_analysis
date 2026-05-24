@@ -21,18 +21,18 @@ This project analyzes U.S. airline delay performance using monthly airline and a
 
 The dataset contains four major categories of variables:
 
-Time Information
+** Time Information
 year, month
 
-Airline & Airport Information
+** Airline & Airport Information
 carrier, carrier_name, airport, airport_name
 
-Operational Metrics (Counts / Frequency)
+** Operational Metrics (Counts / Frequency)
 Represent how often disruptions occur.
 
 arr_flights, arr_del15, arr_cancelled, arr_diverted, carrier_ct, weather_ct, nas_ct, security_ct, late_aircraft_ct
 
-Delay Metrics (Minutes / Severity)
+** Delay Metrics (Minutes / Severity)
 Represent operational impact in terms of total delay minutes.
 
 arr_delay, carrier_delay, weather_delay, nas_delay, security_delay, late_aircraft_delay
@@ -41,22 +41,22 @@ arr_delay, carrier_delay, weather_delay, nas_delay, security_delay, late_aircraf
 
 To improve interpretability and enable fair comparisons across airlines, additional operational metrics were engineered:
 
-Rates (Efficiency)
+** Rates (Efficiency)
 Normalize disruptions relative to flight volume.
 
 delay_rate, delay15_rate, cancel_rate, divert_rate
 
-Shares (Delay Composition)
+** Shares (Delay Composition)
 Show contribution of each delay cause to total delay.
 
 carrier_delay_share, weather_delay_share, nas_delay_share, security_delay_share, late_aircraft_delay_share
 
-Frequency Metrics
+** Frequency Metrics
 Measure how frequently specific disruptions occur.
 
 carrier_delay_freq, weather_delay_freq, nas_delay_freq, security_delay_freq, late_aircraft_delay_freq
 
-Severity Metrics
+** Severity Metrics
 Measure average delay impact per delayed flight.
 
 avg_delay_per_delayed_flight, carrier_avg_delay, weather_avg_delay, nas_avg_delay, security_avg_delay, late_aircraft_avg_delay
