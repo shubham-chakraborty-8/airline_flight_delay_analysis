@@ -15,53 +15,160 @@ Python, Excel, Power BI
 
 ## Dataset Overview
 
-This project analyzes U.S. airline delay performance using monthly airline and airport operational data. The dataset contains flight volume, cancellations, diversions, arrival delays, and delay causes across multiple airlines and airports over time.
+This project analyzes **U.S. airline delay performance** using monthly airline and airport operational data. The dataset captures airline operational performance across multiple airports and carriers, including:
 
-### Original Features
+- **Flight volume**
+- **Cancellations**
+- **Diversions**
+- **Arrival delays**
+- **Delay causes over time**
 
-The dataset contains four major categories of variables:
+The objective is to understand operational efficiency, delay severity, and the major contributors to disruptions across airlines and airports.
 
-** Time Information
-year, month
+---
 
-** Airline & Airport Information
-carrier, carrier_name, airport, airport_name
+## Original Features
 
-** Operational Metrics (Counts / Frequency)
-Represent how often disruptions occur.
+The dataset consists of **four major categories of variables**.
 
-arr_flights, arr_del15, arr_cancelled, arr_diverted, carrier_ct, weather_ct, nas_ct, security_ct, late_aircraft_ct
+### Time Information
 
-** Delay Metrics (Minutes / Severity)
-Represent operational impact in terms of total delay minutes.
+Tracks the time period for airline operations.
 
-arr_delay, carrier_delay, weather_delay, nas_delay, security_delay, late_aircraft_delay
+- `year`
+- `month`
 
-### Engineered Features
+---
 
-To improve interpretability and enable fair comparisons across airlines, additional operational metrics were engineered:
+### Airline & Airport Information
 
-** Rates (Efficiency)
-Normalize disruptions relative to flight volume.
+Contains identifiers and descriptive information for airlines and airports.
 
-delay_rate, delay15_rate, cancel_rate, divert_rate
+**Airline Information**
+- `carrier`
+- `carrier_name`
 
-** Shares (Delay Composition)
-Show contribution of each delay cause to total delay.
+**Airport Information**
+- `airport`
+- `airport_name`
 
-carrier_delay_share, weather_delay_share, nas_delay_share, security_delay_share, late_aircraft_delay_share
+---
 
-** Frequency Metrics
-Measure how frequently specific disruptions occur.
+### 📊 Operational Metrics *(Counts / Frequency)*
 
-carrier_delay_freq, weather_delay_freq, nas_delay_freq, security_delay_freq, late_aircraft_delay_freq
+These variables represent **how often disruptions occur** in airline operations.
 
-** Severity Metrics
-Measure average delay impact per delayed flight.
+| Feature | Description |
+|----------|-------------|
+| `arr_flights` | Total arriving flights |
+| `arr_del15` | Flights delayed by **15+ minutes** |
+| `arr_cancelled` | Cancelled flights |
+| `arr_diverted` | Diverted flights |
+| `carrier_ct` | Carrier-related delay count |
+| `weather_ct` | Weather-related delay count |
+| `nas_ct` | National Airspace System delay count |
+| `security_ct` | Security-related delay count |
+| `late_aircraft_ct` | Late aircraft-related delay count |
 
-avg_delay_per_delayed_flight, carrier_avg_delay, weather_avg_delay, nas_avg_delay, security_avg_delay, late_aircraft_avg_delay
+---
 
-These engineered features help distinguish between frequency (how often delays happen), severity (how impactful they are), efficiency (performance relative to scale), and composition (what causes delays) for deeper operational analysis.
+### Delay Metrics *(Minutes / Severity)*
+
+These variables represent the **operational impact of delays in terms of total delay minutes**.
+
+| Feature | Description |
+|----------|-------------|
+| `arr_delay` | Total arrival delay minutes |
+| `carrier_delay` | Carrier-related delay minutes |
+| `weather_delay` | Weather-related delay minutes |
+| `nas_delay` | NAS-related delay minutes |
+| `security_delay` | Security-related delay minutes |
+| `late_aircraft_delay` | Late aircraft-related delay minutes |
+
+---
+
+## Engineered Features
+
+To improve **interpretability** and enable **fair comparisons across airlines**, several additional operational metrics were engineered.
+
+These engineered variables help normalize performance, identify root causes, and evaluate operational efficiency.
+
+---
+
+### 📈 Rates *(Efficiency Metrics)*
+
+These features normalize disruptions relative to flight volume and measure operational efficiency.
+
+| Feature |
+|----------|
+| `delay_rate` |
+| `delay15_rate` |
+| `cancel_rate` |
+| `divert_rate` |
+
+> *Purpose:* Helps compare airlines fairly regardless of operational scale.
+
+---
+
+### Shares *(Delay Composition Metrics)*
+
+These features show the **contribution of each delay cause to total delay time**.
+
+| Feature |
+|----------|
+| `carrier_delay_share` |
+| `weather_delay_share` |
+| `nas_delay_share` |
+| `security_delay_share` |
+| `late_aircraft_delay_share` |
+
+> *Purpose:* Helps identify **what contributes most to delays**.
+
+---
+
+### Frequency Metrics
+
+These features measure **how frequently specific disruptions occur**.
+
+| Feature |
+|----------|
+| `carrier_delay_freq` |
+| `weather_delay_freq` |
+| `nas_delay_freq` |
+| `security_delay_freq` |
+| `late_aircraft_delay_freq` |
+
+> *Purpose:* Measures *how often* different operational issues occur.
+
+---
+
+### Severity Metrics
+
+These features measure the **average delay impact per delayed flight**.
+
+| Feature |
+|----------|
+| `avg_delay_per_delayed_flight` |
+| `carrier_avg_delay` |
+| `weather_avg_delay` |
+| `nas_avg_delay` |
+| `security_avg_delay` |
+| `late_aircraft_avg_delay` |
+
+> *Purpose:* Measures *how impactful* delays are once they occur.
+
+---
+
+## Why These Engineered Features Matter
+
+The engineered features help distinguish between:
+
+- **Frequency** → *How often delays happen*
+- **Severity** → *How impactful delays are*
+- **Efficiency** → *Performance relative to airline scale*
+- **Composition** → *What causes delays*
+
+This enables **deeper operational analysis**, more meaningful airline comparisons, and better identification of key delay drivers.
 
 ## Key KPIs
 
