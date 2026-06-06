@@ -1,17 +1,36 @@
 # Airline Flight Delay Analysis
 
-## Introduction
+## Project Assets
+
+- [Presentation Deck](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/reports/US%20Airline%20Delay%20Performance%20Analysis.pptx)
+- [Jupyter Notebook](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/notebooks/flight_delay_project.ipynb)
+- [Power BI Dashboard](https://drive.google.com/file/d/1c9aW8vhthLCCbC4O03aup256x1wy-VRk/view?usp=drive_link)
+- [Dashboard PDF](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/dashboards/flight_delay.pdf)
+
+
+## Business Problem
 Airline delays are a critical operational and customer experience challenge, but they are often analyzed in isolation - focusing either on delay frequency or duration without a unified view.
 
 This fragmented approach makes it difficult to identify true performance bottlenecks, assess operational efficiency, and understand risk patterns across airlines.
 
 This project aims to address this gap by combining frequency, severity, and efficiency metrics to provide a comprehensive view of airline delay behavior and enable more accurate performance comparison.
 
-## Tools Used 
-Python, Excel, Power BI
+## Project Objective
+This project aims to analyze airline delay patterns using frequency, severity, and operational efficiency metrics.
+
+## Tools & Technologies
+
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Power BI
+- Excel
 
 ## Dataset
-[Kaggle - Flight Delay Data](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay)
+The initial source data was obtained from [Kaggle - Flight Delay Data](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay).
+The final processed dataset containing the original variables and engineered features used throughout this analysis is available [here](https://docs.google.com/spreadsheets/d/1BY91xs6ZmVBmrdGWFnY4uSaIcl9CIN7H/edit?usp=drive_link&ouid=109337395518703815337&rtpof=true&sd=true)
 
 ## Dataset Overview
 
@@ -24,6 +43,23 @@ This project analyzes **U.S. airline delay performance** using monthly airline a
 - **Delay causes over time**
 
 The objective is to understand operational efficiency, delay severity, and the major contributors to disruptions across airlines and airports.
+
+---
+
+## Dataset Summary
+
+| Metric | Value |
+|---------|---------|
+| Records (Raw) | 171,666 |
+| Records (Processed) | 171,426 |
+| Original Features | 21 |
+| Engineered Features | 22 |
+| Time Period | 2013–2023 |
+| Airlines | 21 |
+
+
+Raw Dataset Shape: (171,666, 21)
+Processed Dataset Shape: (171,426, 43)
 
 ---
 
@@ -177,8 +213,10 @@ This enables **deeper operational analysis**, more meaningful airline comparison
 3. Impax%
 4. Disruption Score
 
+---
+
 # Exploratory data analysis
-The full EDA can be found the notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/flight_delay_project.ipynb).
+The full EDA can be found the notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/notebooks/flight_delay_project.ipynb).
 
 ## Flight Disruption Mix
 <img width="1393" height="672" alt="flight_disruption_mix_trend" src="https://github.com/user-attachments/assets/a3d8fb35-b82c-4afa-8e5c-21b321e7f4ec" />
@@ -223,6 +261,7 @@ The standard deviation in delay rate of airlines is plotted against the average 
 
 The summary is sorted along the disruption score. Since I could not find any reliable universal performance scoring metric for the airline industry, I provided weighted scoring to the disruption events such as delays, cancellations and diversions. Cancellations got the highest score of 5, diversions got 3 and delays being most common and least disruptive among the three got a baseline scoring. The combination created a table that confirms the performance matrix to a high degree. Delta Air lines being the clear most reliable alternative despite being one of the larger airlines highlights their efficiency. Both the top most disruptive airlines had to rebrand themselves later on due to being highly inefficient.
 
+---
 
 ## Airline Rebranding
 Two airline changed their branding while keeping the same IATA code. A simple pivot chart shows the change below. You may access the filtered dataset for the rebranded airlines [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/airline_dataset_final_ev_mq_filtered.xlsx).
@@ -232,8 +271,51 @@ ExpressJet Airlines Inc. became Expressjet Airlines LLC on April 2019. American 
 Clearly Expressjet had to scale down their operations over the years and the pandemic may have been the final chapter in their downfall as their last flight was on the third quarter of 2020. 
 American Eagle rebranded to Envoy Air and got slightly better while keeping their flights relatively stable but slowly decreased operations after the pandemic.
 
+---
 
-## Dashboard
+## Dashboards
 
-Please find the fully interactive PowerBi desktop file [here](https://drive.google.com/file/d/1dQekthyGDRKm_d_2tA6Bhzfp5E-LkUeK/view?usp=drive_link).
-Alternatively you can also view the static pdf [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/flight_delay.pdf).
+The cleaned and feature-engineered dataset was used to build an interactive Power BI reporting solution focused on airline operational performance, delay behavior, and disruption analysis.
+The complete Power BI Desktop file can be accessed [here](https://drive.google.com/file/d/1c9aW8vhthLCCbC4O03aup256x1wy-VRk/view?usp=drive_link).
+A static PDF version of the dashboard is available [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/dashboards/flight_delay.pdf).
+
+The report consists of five interconnected dashboards designed to analyze airline performance from multiple perspectives.
+
+### Executive dashboard
+Provides a high-level overview of airline operations and key performance indicators, including flight volume, delays, cancellations, OTP and disruption metrics.
+<img width="1473" height="819" alt="fd_pbix_pg1" src="https://github.com/user-attachments/assets/3fbcf1b8-ef05-4dc6-ae1f-4e3b700b9c50" />
+
+### Delay Trends
+Examines delay patterns over time, highlighting seasonality, long-term trends, and operational fluctuations across the study period.
+<img width="1476" height="829" alt="fd_pbix_pg2" src="https://github.com/user-attachments/assets/47bd9c6a-91a8-4237-a535-7cd65414e9ba" />
+
+### Efficiency Analysis
+Evaluates airline operational efficiency using engineered metrics such as delay severity and delay frequency.
+<img width="1476" height="825" alt="fd_pbix_pg3" src="https://github.com/user-attachments/assets/8775e1e7-715f-4a92-b690-391dc4ce42ac" />
+
+### Root cause of Delay
+Breaks down total delays into Carrier, Weather, NAS, Security, and Late Aircraft components to identify dominant disruption drivers.
+<img width="1476" height="826" alt="fd_pbix_pg4" src="https://github.com/user-attachments/assets/2cf426ad-46f6-49cf-9340-4f4efe65bbcb" />
+
+### Airline Risk Analysis
+Compares airlines using custom KPIs such as ImPax%, Disruption Score, OTP, and cancellation metrics to identify operational risk profiles.
+<img width="1476" height="826" alt="fd_pbix_pg5" src="https://github.com/user-attachments/assets/66825e0e-fc05-4df3-a80d-34f4a54759f0" />
+
+Two matrices in the dashboard provide a visual detail of the airline performance.
+**Efficiency Matrix**
+<img width="2196" height="786" alt="eff_matrix" src="https://github.com/user-attachments/assets/73bae1d8-d2c8-4984-b154-f28080b42729" />
+
+**Disruption Matrix**
+<img width="2170" height="786" alt="disrup_matrix" src="https://github.com/user-attachments/assets/5b398268-f697-490d-89cf-63f0535feadc" />
+
+---
+
+## Final Insights
+
+- Carrier-related operational issues contributed the largest share of total delay minutes.
+- Delay patterns exhibited clear seasonal behavior, with disruption levels varying throughout the year.
+- Airlines showed distinct operational profiles, with some experiencing frequent low-impact delays and others facing less frequent but more severe disruptions.
+- On-Time Performance (OTP) alone did not fully capture airline reliability.
+- Combining frequency, severity, and disruption metrics provided a more comprehensive assessment of operational performance.
+- Late aircraft and carrier-related delays emerged as the most influential disruption categories across many airlines.
+- Custom KPIs such as ImPax% and Disruption Score helped differentiate airline risk beyond traditional delay statistics.
