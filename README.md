@@ -31,7 +31,7 @@ This project aims to analyze airline delay patterns using frequency, severity, a
 ## Dataset
 The initial source data was obtained from [Kaggle - Flight Delay Data](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay).
 
-The final processed dataset containing the original variables and engineered features used throughout this analysis is available [here].(https://docs.google.com/spreadsheets/d/1BY91xs6ZmVBmrdGWFnY4uSaIcl9CIN7H/edit?usp=drive_link&ouid=109337395518703815337&rtpof=true&sd=true)
+The final processed dataset containing the original variables and engineered features used throughout this analysis is available [here]https://docs.google.com/spreadsheets/d/1BY91xs6ZmVBmrdGWFnY4uSaIcl9CIN7H/edit?usp=drive_link&ouid=109337395518703815337&rtpof=true&sd=true).
 
 ## Dataset Overview
 
@@ -218,7 +218,7 @@ This enables **deeper operational analysis**, more meaningful airline comparison
 ---
 
 # Exploratory data analysis
-The full EDA can be found the notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/notebooks/flight_delay_project.ipynb).
+The full EDA can be found the jupyter notebook [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/notebooks/flight_delay_project.ipynb).
 
 ## Flight Disruption Mix
 <img width="1393" height="672" alt="flight_disruption_mix_trend" src="https://github.com/user-attachments/assets/a3d8fb35-b82c-4afa-8e5c-21b321e7f4ec" />
@@ -266,7 +266,7 @@ The summary is sorted along the disruption score. Since I could not find any rel
 ---
 
 ## Airline Rebranding
-Two airline changed their branding while keeping the same IATA code. A simple pivot chart shows the change below. You may access the filtered dataset for the rebranded airlines [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/airline_dataset_final_ev_mq_filtered.xlsx).
+Two airline changed their branding while keeping the same IATA code. A simple pivot chart shows the change below. the filtered dataset for the rebranded airlines can be accessed [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/airline_dataset_final_ev_mq_filtered.xlsx).
 
 <img width="1576" height="580" alt="envoy_express" src="https://github.com/user-attachments/assets/f4d10cec-78b8-48b4-b7e1-371a399cf13d" />
 ExpressJet Airlines Inc. became Expressjet Airlines LLC on April 2019. American Eagle Airlines Inc. rebranded to Envoy Air on April 2019.
