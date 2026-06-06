@@ -30,7 +30,8 @@ This project aims to analyze airline delay patterns using frequency, severity, a
 
 ## Dataset
 The initial source data was obtained from [Kaggle - Flight Delay Data](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay).
-The final processed dataset containing the original variables and engineered features used throughout this analysis is available [here](https://docs.google.com/spreadsheets/d/1BY91xs6ZmVBmrdGWFnY4uSaIcl9CIN7H/edit?usp=drive_link&ouid=109337395518703815337&rtpof=true&sd=true)
+
+The final processed dataset containing the original variables and engineered features used throughout this analysis is available [here].(https://docs.google.com/spreadsheets/d/1BY91xs6ZmVBmrdGWFnY4uSaIcl9CIN7H/edit?usp=drive_link&ouid=109337395518703815337&rtpof=true&sd=true)
 
 ## Dataset Overview
 
@@ -59,6 +60,7 @@ The objective is to understand operational efficiency, delay severity, and the m
 
 
 Raw Dataset Shape: (171,666, 21)
+
 Processed Dataset Shape: (171,426, 43)
 
 ---
@@ -276,7 +278,9 @@ American Eagle rebranded to Envoy Air and got slightly better while keeping thei
 ## Dashboards
 
 The cleaned and feature-engineered dataset was used to build an interactive Power BI reporting solution focused on airline operational performance, delay behavior, and disruption analysis.
+
 The complete Power BI Desktop file can be accessed [here](https://drive.google.com/file/d/1c9aW8vhthLCCbC4O03aup256x1wy-VRk/view?usp=drive_link).
+
 A static PDF version of the dashboard is available [here](https://github.com/shubham-chakraborty-8/airline_flight_delay_analysis/blob/main/dashboards/flight_delay.pdf).
 
 The report consists of five interconnected dashboards designed to analyze airline performance from multiple perspectives.
@@ -302,6 +306,7 @@ Compares airlines using custom KPIs such as ImPax%, Disruption Score, OTP, and c
 <img width="1476" height="826" alt="fd_pbix_pg5" src="https://github.com/user-attachments/assets/66825e0e-fc05-4df3-a80d-34f4a54759f0" />
 
 Two matrices in the dashboard provide a visual detail of the airline performance.
+
 **Efficiency Matrix**
 <img width="2196" height="786" alt="eff_matrix" src="https://github.com/user-attachments/assets/73bae1d8-d2c8-4984-b154-f28080b42729" />
 
